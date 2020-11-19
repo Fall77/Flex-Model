@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+    text-align:center;
+	margin:0;
+	}
+h1 {
+	font-family: 'Russo One', sans-serif;
+	font-weight:normal;
+	margin:40px;
+	}
+article {
+	width:14.66%;
+	margin:1%;
+	box-sizing:border-box;
+	}
+article img {
+	max-width: 100%;
+	height:auto;
+	display:block;
+	}
+.productos {
+	display:flex;
+	flex-wrap:wrap;
+	max-width:1200px;
+	margin:auto;
+	background:#ddd;
+	}
+h1:before {
+	content: '';
+	background-image: url('fotos/todos.png');
+	vertical-align:middle;
+	margin-bottom:10px;
+	width:128px;
+	height:57px;
+	display:inline-block;
+	background-position-x:0;
+	background-position-y:-64px;
+}
+h1:after{
+	content:'';
+	background-image: url('fotos/todos.png');
+	vertical-align:middle;
+	width: 128px;
+	height: 57px;
+	display: inline-block;
+	margin-bottom: 10px;
+	background-position-y:-122px;
+    }
+.fblogo, .twlogo, .ytlogo, .inlogo  {
+	background-image: url('fotos/todos.png');
+	width:32px;
+	height:32px;
+	display:inline-block;
+	background-position-y:-32px;
+	}
+.fblogo {
+	background-position-x:-32px;
+	}
+.twlogo {
+    background-position-x: -96px;
+	}
+.ytlogo {
+	background-position-x:0px;
+	}
+.inlogo {
+	background-position-x: -64px;
+		}
+.fblogo:hover, .twlogo:hover, .ytlogo:hover, .inlogo:hover{
+	background-position-y:0px;
+	}
+footer {
+	border-top:1px solid #000;
+	padding-top:10px;
+	margin-top:10px;
+	text-align:right;
+	}
+footer {
+	max-width:1200px;
+	margin:auto;				
+	}
+.productos article h3 {
+	position:absolute;
+	top:50px;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:0;
+	text-align:center;
+	color:#ffffff;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	opacity:0;
+	transition: 0.4s opacity, 0.4s top;
+	}
+.productos article:hover h3 {
+	opacity:1;
+	top:0px;
+    }
+.productos article h3 span {
+	background: rgba(0,0,0,0.7);
+	padding:7px;
+	display:block;
+    }
+.productos article {
+	position:relative;
+    }
+nav {
+	background:#000;
+	}
+nav ul {
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	max-width:1200px;
+	margin:auto;
+	padding:0;
+	}			
+nav a {			
+	color:#fff;
+	text-decoration:none;
+	padding:10px;
+	display:block;
+    }
+			
+@media (max-width:1000px) {
+	article {
+		width:23%;
+		}
+	}
+@media (max-width:700px) {
+	article {
+		width:31.33%;
+		}
+	}
+@media (max-width:500px) {
+	article {
+		width:48%;
+		}
+    nav ul {
+		display:block;
+		position:fixed;
+		top:134px;
+		left:0;
+		right:0;
+		background:#000;
+		z-index:99999999;
+		}
+	h1:before, h1:after{
+		width: 50px;
+		background-size:100% auto; 
+		height: 22px;
+		margin-bottom: 6px;
+	    }
+	h1:before{
+		background-position-y:-25px;
+		}
+	h1:after{
+		background-position-y:-48px; 
+		}
+	h1{
+		margin: 15px;
+		font-size: 1.7em;
+		}
+	#hamburguesa{
+		background-image:url('/fotos/menu.svg');
+		position: fixed;
+		top: 8px;
+		right: 4px;
+		height: 40px;
+		width: 40px;
+		padding: 0;
+		background-size: 100% auto;
+	    z-index: 99999;
+		}
+}
+@media(min-width: 600px) {
+		#hamburguesa{
+            display: none;
+			}
+        }
