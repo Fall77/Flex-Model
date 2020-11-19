@@ -27,7 +27,7 @@ article img {
 	}
 h1:before {
 	content: '';
-	background-image: url('./fotos/todos.png');
+	background-image: url('https://github.com/Fall77/Responsive_Model/blob/main/fotos/todos.png');
 	vertical-align:middle;
 	margin-bottom:10px;
 	width:128px;
