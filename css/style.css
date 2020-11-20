@@ -27,7 +27,7 @@ article img {
 	}
 h1:before {
 	content: '';
-	background-image: url('../fotos/todos.PNG');
+	background-image: url(/fotos/todos.PNG);
 	vertical-align:middle;
 	margin-bottom:10px;
 	width:128px;
@@ -38,7 +38,7 @@ h1:before {
 }
 h1:after{
 	content:'';
-	background-image: url('../fotos/todos.PNG');
+	background-image: url(/fotos/todos.PNG);
 	vertical-align:middle;
 	width: 128px;
 	height: 57px;
@@ -47,7 +47,7 @@ h1:after{
 	background-position-y:-122px;
     }
 .fblogo, .twlogo, .ytlogo, .inlogo  {
-	background-image: url('../fotos/todos.PNG');
+	background-image: url(/fotos/todos.PNG);
 	width:32px;
 	height:32px;
 	display:inline-block;
@@ -163,7 +163,7 @@ nav a {
 		font-size: 1.7em;
 		}
 	#hamburguesa{
-		background-image:url('../fotos/menu.PNG');
+		background-image:url(/fotos/menu.PNG);
 		position: fixed;
 		top: 8px;
 		right: 4px;
